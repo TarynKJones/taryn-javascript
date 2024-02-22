@@ -87,6 +87,44 @@
     let try06 = makename("Robert", " 'Beto' ", "O'Rourke");
     console.log(try06);
 
+    // The upgraded name section
+
+    console.log("making a better name function");
+
+    // A better name function to fix middle initials
+
+    function makeBetterName(firstname, middlename, lastname) {
+      if (middlename.length === 1) {
+        // adding and updating here
+        middlename = middlename + ".";
+      }
+      let fullname = firstname + " " + middlename + " " + lastname;
+      return fullname
+    }
+
+    console.log(makeBetterName("Joan", "Marie", "Larkin"));
+    
+    console.log(makeBetterName("John", "F", "Kennedy"));
+
+    console.log(makeBetterName("Dio", "H", "Brando"));
+
+    console.log(makeBetterName("Funny", "America", "Valentine"))
+
+    console.log("scoreCompare function");
+    function scoreCompare(home, away) {
+      if (home > away) {
+        return "Home team wins! :)";
+      } else {
+        return "Away team wins! :("
+      }
+    }
+    console.log(scoreCompare(5,3));
+    console.log(scoreCompare(3.5));
+
+
+
+
+
 
 
 
